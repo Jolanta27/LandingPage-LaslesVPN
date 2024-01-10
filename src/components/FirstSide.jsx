@@ -5,6 +5,7 @@ import MiddleSection from './MiddleSection';
 import PaymentSection from './PaymentSection';
 import MapSection from './MapSection';
 import RecomendationSection from './RecomendationSection';
+import Footer from './Footer';
 
 const FirstSide = () => {
 return (
@@ -16,6 +17,7 @@ return (
     <PaymentSection />
     <MapSection />
     <RecomendationSection />
+    <Footer />
     </>
 )
 }

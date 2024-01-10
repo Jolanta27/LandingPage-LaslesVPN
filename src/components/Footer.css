@@ -1,0 +1,32 @@
+.footer-main-section { 
+    background-color: #F6F6F6;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.subscription-main {
+    background-color: white;
+  
+}
+.subscription-main p, .subscription-main h4, .subscription-main button {
+    background-color: inherit;
+   ;
+}
+.subscription-main button {
+    background-color: #f53838;
+    border-style: none;
+    border-radius: 10px;
+    width: 250px;
+    padding: 18px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 5px 15px #f5383883;
+    cursor: pointer;
+
+   
+}
+
