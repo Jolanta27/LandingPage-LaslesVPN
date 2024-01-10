@@ -1,0 +1,56 @@
+.plan-description {
+    text-align: center;
+}
+h3 {
+    font-size: 35px;
+    color: #0B132A;
+}
+p {
+    color: #4F5665;
+    font-size: 20px;
+}
+.main-desc, .price {
+    color: #0B132A;
+    font-weight: 700;
+}
+.price-details {
+    /*color: #4F5665;*/
+    color: rgb(86, 86, 225);
+}
+.choose-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.fst-box, .scn-box, .trd-box {
+
+    width: 330px;
+    height: 580px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    padding: 30px 5px 25px 5px;
+    text-align: center;
+    
+}
+
+.cake-pic {
+    width: 144px;
+    height: 169px;
+    box-shadow: 3px 3px 3px #dcdde0;
+}
+.pay-btn {
+    border: 2px solid #F53838;
+    border-radius: 20px;
+    width: 177px;
+    height: 45px;
+    color: #F53838;
+    font-size: 16px ;
+    font-weight: bolder;
+     
+}
+.content-features {
+    line-height: 16px;
+}
+.content-features p:last-child {
+    margin-bottom: 40px;
+}

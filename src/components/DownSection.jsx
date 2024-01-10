@@ -9,7 +9,7 @@ return (
     <div className="user-location-server-section">
         <div className='section'>
         <div className='user-section'>
-        <FontAwesomeIcon icon={faUser} />
+        <FontAwesomeIcon icon={faUser} className='font-picture'/>
         <div className='uls-section'>
         <h2>90+</h2>
         <p>Users</p>
@@ -17,7 +17,7 @@ return (
         </div>
         <div className='vertical-line'></div>
         <div className='location-section'>
-        <FontAwesomeIcon icon={faLocationPin} />
+        <FontAwesomeIcon icon={faLocationPin} className='font-picture'/>
         <div className='uls-section'>
         <h2>30+</h2>
         <p>Locations</p>
@@ -25,7 +25,7 @@ return (
         </div>
         <div className='vertical-line'></div>
         <div className='server-section'>
-        <FontAwesomeIcon icon={faServer} />
+        <FontAwesomeIcon icon={faServer} className='font-picture'/>
         <div className='uls-section'>
         <h2>50+</h2>
         <p>Servers</p>
