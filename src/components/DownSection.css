@@ -1,0 +1,19 @@
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 988px;
+    height: 182px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.vertical-line {
+    width: 2px;
+    background-color: rgb(210, 210, 210);
+    height: 80px;
+}
+
+.user-section, .location-section, .server-section {
+    background-color: white;
+}

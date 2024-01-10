@@ -1,0 +1,47 @@
+.main-section {
+    display: flex;
+    height: 75vh;
+    margin-top: 50px;
+}
+.left-section {
+    width: 540px;
+}
+h1 {
+    height: 100px;
+    margin-top: 25%;
+    font-size: 40px;
+}
+.brand-name {
+    font-weight: bolder;
+}
+.main-text {
+    line-height: 30px;
+}
+.image-section {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-top: 130px;
+    
+}
+.main-picture {
+    width: 443px;
+    height: 280px;
+    box-shadow: 3px 3px 3px rgba(222, 210, 210, 0.75);
+}
+.centered-button {
+    text-align: center;
+    margin-top: 40px;
+}
+.main-button {
+    background-color: #F53838;
+    width: 250px;
+    height: 65px;
+    border-style: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 3px 3px 10px rgba(245, 56, 56, 0.65);
+    cursor: pointer;
+   
+}
