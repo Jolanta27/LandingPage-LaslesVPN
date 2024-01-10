@@ -1,0 +1,22 @@
+.happy-customer-boxes-main {
+text-align: center;
+}
+.happy-customer-boxes{
+   display: flex;
+   justify-content: space-around;
+}
+
+.img-companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px;
+    height: 145px;
+}
+.happy-customer-1, .happy-customer-2, .happy-customer-3 {
+    width: 25%;
+    background-color: white;
+    border-radius: 6px;
+    height: 100px;
+    border: 2px solid black;
+}

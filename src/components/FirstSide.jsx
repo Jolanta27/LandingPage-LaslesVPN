@@ -3,6 +3,8 @@ import MainSection from './MainSection';
 import DownSection from './DownSection';
 import MiddleSection from './MiddleSection';
 import PaymentSection from './PaymentSection';
+import MapSection from './MapSection';
+import RecomendationSection from './RecomendationSection';
 
 const FirstSide = () => {
 return (
@@ -12,6 +14,8 @@ return (
     <DownSection />
     <MiddleSection />
     <PaymentSection />
+    <MapSection />
+    <RecomendationSection />
     </>
 )
 }
