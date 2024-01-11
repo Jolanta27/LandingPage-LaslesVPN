@@ -9,6 +9,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
         <footer>
+            <div className='footer-m'>
         <div className="footer-main-section">
             <div className='subscription-main'>
                 <div className='subscription-text'>
@@ -24,10 +25,11 @@ const Footer = () => {
             <div className='footer-logos'>
                 <img src={logo} alt="logo" />
                 <p>LaslesVPN is a private virtual network that has unique features and has high security.</p>
-                <FontAwesomeIcon icon={faFacebookF} />
-                <FontAwesomeIcon icon={faTwitter} />
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon icon={faFacebookF} className='brand-font'/>
+                <FontAwesomeIcon icon={faTwitter} className='brand-font'/>
+                <FontAwesomeIcon icon={faInstagram} className='brand-font'/>
                 <p>©{currentYear}Lasles<span>VPN</span></p>
+                <p>Developed by Jolanta  Galczynska</p>
             </div>
             <div className='footer-links-section'>
             <div className='footer-links-main'>
@@ -41,7 +43,7 @@ const Footer = () => {
                     <li>Blog</li>
                 </ul>
             </div>
-            <div>
+            <div className='footer-links-main'>
                 <h4>Engage</h4>
                 <ul>
                     <li>LaslesVPN?</li>
@@ -52,11 +54,14 @@ const Footer = () => {
                     <li>Terms of Service</li>
                 </ul>
             </div>
-            <div>
+            <div className='footer-links-main'>
                 <h4>Earn Money</h4>
+                <ul>
                 <li>Affiliate</li>
                 <li>Become Partner</li>
+                </ul>
             </div>
+        </div>
         </div>
         </div>
         </footer>

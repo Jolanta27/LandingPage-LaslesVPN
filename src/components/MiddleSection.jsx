@@ -1,5 +1,5 @@
 import '../components/MiddleSection.css';
-import middlePic from '../middleSectionPic.JPG';
+import middlePic from '../features-illustration.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
