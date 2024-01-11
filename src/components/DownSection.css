@@ -14,8 +14,7 @@
     background-color: rgb(210, 210, 210);
     height: 80px;
 }
-
-.user-section, .location-section, .server-section {
+.statistic {
     background-color: white;
     display: flex;
     align-items: center;
@@ -29,6 +28,5 @@
 .font-picture {
     background-color: #FFECEC;
     border-radius: 50%;
-    padding: 20px;
-    
+    padding: 20px; 
 }

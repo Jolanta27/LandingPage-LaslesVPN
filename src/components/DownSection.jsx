@@ -3,36 +3,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faServer, faLocationPin } from '@fortawesome/free-solid-svg-icons';
 
+const Statistic = ({ icon, number, label}) => {
+    return (
+        <div className='statistic'>
+            <FontAwesomeIcon icon={icon} className='font-picture'/>
+            <div className='uls-section'>
+                <h2>{number}</h2>
+                <p>{label}</p>
+            </div>
+        </div> 
+    );
+}
+ const VerticalLine = () => {
+    return (
+    <div className='vertical-line'></div>
+    );
+ };
 
 const DownSection = () => {
 return (
     <div className="user-location-server-section">
         <div className='section'>
-        <div className='user-section'>
-        <FontAwesomeIcon icon={faUser} className='font-picture'/>
-        <div className='uls-section'>
-        <h2>90+</h2>
-        <p>Users</p>
-        </div>
-        </div>
-        <div className='vertical-line'></div>
-        <div className='location-section'>
-        <FontAwesomeIcon icon={faLocationPin} className='font-picture'/>
-        <div className='uls-section'>
-        <h2>30+</h2>
-        <p>Locations</p>
-        </div>
-        </div>
-        <div className='vertical-line'></div>
-        <div className='server-section'>
-        <FontAwesomeIcon icon={faServer} className='font-picture'/>
-        <div className='uls-section'>
-        <h2>50+</h2>
-        <p>Servers</p>
-        </div>
+        <Statistic icon={faUser} number="90+" label="Users"/>
+        <VerticalLine />
+        <Statistic icon={faLocationPin} number="30+" label="Locations"/>
+        <VerticalLine /> 
+        <Statistic icon={faServer} number="50+" label="Servers"/>
         </div>
     </div>
-    </div>
-)
+);
 }
 export default DownSection;
