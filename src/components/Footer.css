@@ -1,19 +1,28 @@
 .footer-main-section { 
     background-color: #F6F6F6;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 0 20px;
 }
-
 .subscription-main {
     background-color: white;
-  
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: space-around;
+    margin: 40px;
+    box-shadow: 1px 3px 10px rgba(136,136,136,.4);
 }
-.subscription-main p, .subscription-main h4, .subscription-main button {
+.subscription-main p, .subscription-main h4, .subscription-main button, .subscription-text {
     background-color: inherit;
    ;
+}
+.subscription-text {
+    width: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+.subscription-main h4 {
+    font-size: 35px;
+    color: #0B132A;
 }
 .subscription-main button {
     background-color: #f53838;
@@ -26,7 +35,13 @@
     font-weight: 500;
     box-shadow: 0px 5px 15px #f5383883;
     cursor: pointer;
-
-   
 }
-
+.footer-logos {
+   width: 25%;
+}
+.footer-links-main {
+    
+}
+.footer-links-section {
+  display: flex;
+}
