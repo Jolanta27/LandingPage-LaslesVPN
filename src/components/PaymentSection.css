@@ -23,14 +23,12 @@ p {
     margin-top: 60px;
 }
 .fst-box, .scn-box, .trd-box {
-
     width: 330px;
-    height: 580px;
+    height: 600px;
     border: 2px solid #DDDDDD;
     border-radius: 10px;
     padding: 30px 5px 25px 5px;
     text-align: center;
-    
 }
 
 .cake-pic {
@@ -48,9 +46,9 @@ p {
     font-weight: bolder;
      
 }
-.content-features {
-    line-height: 16px;
-}
 .content-features p:last-child {
     margin-bottom: 40px;
+}
+.content-text-f {
+    line-height: 4px;
 }
