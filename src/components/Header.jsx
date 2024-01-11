@@ -1,20 +1,34 @@
 import React from "react";
 import "./Header.css";
 
+const NavItem = ({ link, text}) => {
+    return (
+        <li>
+            <a href={link}>{text}</a>
+        </li>
+    );
+};
+
+ const NavbarButton = ({ text, position}) => {
+  return (
+    <button className={`navbar-button button-${position}`}>{text}</button> 
+  )
+ }
+
 const Header = () => {
     return (
-        <nav className="navbar">
+        <nav>
          <img src="logo.JPG" id="logo" alt="logo" />
             <ul className="navbar-list">
-            <li><a href="/">About</a></li>
-            <li><a href="/">Features</a></li>
-            <li><a href="/">Pricing</a></li>
-            <li><a href="/">Testimonials</a></li>
-            <li><a href="/">Help</a></li>
+            <NavItem link="/" text="About" />
+            <NavItem link="/" text="Features" />
+            <NavItem link="/" text="Pricing" />
+            <NavItem link="/" text="Testimonials" />
+            <NavItem link="/" text="Help" />
             </ul>
             <div className="navbar-buttons">
-            <button className="navbar-botton botton-left">Sign in</button>
-            <button className="navbar-botton botton-right">Sign up</button>
+            <NavbarButton text="Sign In" position="left"/>
+            <NavbarButton text="Sign Up" position="right"/>
             </div>
         </nav>
     )

@@ -4,7 +4,7 @@
 body {
     margin: 52px 150px;
 }
-.navbar {
+nav {
 display: flex;
 justify-content: space-between;
 }
@@ -13,14 +13,17 @@ justify-content: space-between;
     padding: 0 30px;
     display: flex;
 }
-.navbar-list, .navbar-botton {
+.navbar-list, .navbar-button {
     font-size: 20px;
+}
+.navbar-list li a:hover {
+    color: #F53855;
+    transition: all 0.5s;
 }
 li a{
     padding: 0 30px;
     text-decoration: none;
 }
-
 img {
     width: 150px;
     height: 45px;
@@ -30,16 +33,15 @@ img {
     display: flex;
     justify-items: center;
 }
-.navbar-botton {
+.navbar-button {
     cursor: pointer;
     width: 130px;
 }
-
-.botton-left {
+.button-left {
     border-style: none;
     font-weight: bold;
 }
-.botton-right {
+.button-right {
     font-weight: bold;
     border-radius: 40px;
     color: #F53855;

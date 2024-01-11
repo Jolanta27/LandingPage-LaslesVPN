@@ -1,10 +1,10 @@
 import './App.css';
-import FirstSide from './components/FirstSide';
+import MainSide from './components/MainSide';
 
 const App = () => {
   return (
     <>
-      < FirstSide />
+      < MainSide />
     </>
   );
 }
