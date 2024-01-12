@@ -1,5 +1,5 @@
-import map from '../map.svg';
-import '../components/MapSection.css';
+import map from '../../src/pictures/map.svg';
+import './styles/MapSection.css';
 
 const MapSection = () => {
     return (

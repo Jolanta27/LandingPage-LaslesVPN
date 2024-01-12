@@ -1,6 +1,6 @@
 import React from 'react';
-import '../components/MainSection.css';
-import picture from '../header-illustration.svg';
+import './styles/MainSection.css';
+import picture from '../../src/pictures/header-illustration.svg';
 
 const MainSection = () => {
     return (

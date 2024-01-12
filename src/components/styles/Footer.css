@@ -1,13 +1,14 @@
-.footer-m {
-    margin: 50px 0 30px 0;
+footer {
+    margin: 50px 0 20px 0;
+    padding: 20px 0;
 }
-.footer-main-section { 
-    padding: 0 20px;
-    margin: 50px 0;
+.footer-boxes { 
+    padding: 0;
+    margin: 30px 0;
     display: flex;
     justify-content: space-around;
 }
-.subscription-main {
+.subscription {
     background-color: white;
     display: flex;
     align-items: center;
@@ -16,20 +17,20 @@
     margin: 40px;
     box-shadow: 1px 3px 10px rgba(136,136,136,.4);
 }
-.subscription-main p, .subscription-main h4, .subscription-main button, .subscription-text {
-    background-color: inherit;
-   ;
-}
 .subscription-text {
     width: 50%;
     text-align: center;
     line-height: 30px;
+    background-color: white;
 }
-.subscription-main h4 {
+.subscription-text h4, .subscription-text p {
+    background-color: inherit;
+}
+.subscription h4 {
     font-size: 35px;
     color: #0B132A;
 }
-.subscription-main button {
+.subscription div:nth-child(2) button{
     background-color: #f53838;
     border-style: none;
     border-radius: 10px;
@@ -41,29 +42,30 @@
     box-shadow: 0px 5px 15px #f5383883;
     cursor: pointer;
 }
-.footer-logos {
-  width: 35%;
+
+footer div.footer-boxes:nth-child(2) p:first-of-type{
+    font-size: 18px;
+    margin-top: 0;
 }
-.footer-logos p:first-of-type{
-font-size: 18px;
-margin-top: 0;
-}
-.footer-logos p:nth-of-type(2){
+footer div.footer-boxes:nth-child(2) p:nth-of-type(2){
     font-size: 16px;
 }
-.footer-logos p:nth-of-type(2) span {
+footer div.footer-boxes:nth-child(2) p:nth-of-type(2) span {
     font-weight: 800;
 }
 .footer-logos p:nth-of-type(3) {
     font-size: 12px;
 }
-.footer-links-section {
-  display: flex;
-  margin-top: 30px;
+ .footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
 }
-.footer-links-section h4 {
-    margin: 0;
+.left-links, .middle-links, .right-links {
+    display: flex;
+    flex-direction: column;
 }
+
 .brand-font {
     width: 35px;
     height: 30px;
@@ -76,16 +78,15 @@ margin-top: 0;
     box-shadow: 1px 3px 10px rgba(136,136,136,.3);
    
 }
-.footer-links-section ul {
-list-style: none;
-padding: 0;
-}
-.footer-links-main h4 {
+.links-1 ul {
+    list-style: none;
     padding: 0;
+    font-size: 14px;
 }
-.footer-links-main {
-    margin: 0 40px;
+.custom-list li {
+    margin-right: 20px;
+    white-space: nowrap;
 }
-.footer-links-main li {
-    cursor: pointer;
+.links-1 h4 {
+    margin-left: 30px;
 }

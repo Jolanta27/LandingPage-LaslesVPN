@@ -1,5 +1,5 @@
-import './PaymentSection.css';
-import payment from '../payment.JPG';
+import './styles/PaymentSection.css';
+import payment from '../../src/pictures/payment.JPG';
 
 const contentFeatures = [
     'Unlimited Bandwith',

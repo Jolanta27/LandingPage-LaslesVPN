@@ -1,15 +1,15 @@
-import '../components/MiddleSection.css';
-import middlePic from '../features-illustration.svg';
+import './styles/MiddleSection.css';
+import middlePic from '../../src/pictures/features-illustration.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
-const features = [
-    'Powerful online protection',
-    'Internet without borders',
-    'Supercharged VPN'
-];
 
 const MiddleSection = () => {
+    const features = [
+        'Powerful online protection',
+        'Internet without borders',
+        'Supercharged VPN'
+    ];
     return (
         <div className='middle-section'>
         <div>

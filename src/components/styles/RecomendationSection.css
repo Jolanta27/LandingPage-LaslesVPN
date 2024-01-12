@@ -1,17 +1,20 @@
-.happy-customer-boxes-main {
+.customers {
 text-align: center;
 }
-.happy-customer-boxes-main h3{
+.customers h3{
     font-size: 45px;
 }
-.happy-customer-boxes-main p:first-of-type + p {
+.customers p {
+    font-size: 20px;
+}
+.customers p:first-of-type + p {
     color:blue;
 }
-.happy-customer-boxes{
+ .customers-boxes{
    display: flex;
    justify-content: space-around;
    align-items: center;
-    margin-top: 60px;
+   margin-top: 60px;
 }
 
 .img-companies {
@@ -28,9 +31,8 @@ text-align: center;
     height: 300px;
     border: 2px solid #DDE0E4;
     padding: 10px 5px;
-    
 }
-.happy-customer-1 p, .happy-customer-2 p, .happy-customer-3 p, .happy-customer-1 div, .happy-customer-2 div, .happy-customer-3 div {
+.happy-customer-1 p, .happy-customer-2 p, .happy-customer-3 p {
     background-color: inherit;
 }
 
@@ -43,6 +45,7 @@ text-align: center;
 .customer-presentation img {
     max-width: 50px;
     margin-right: 15px;
+    margin-left: 10px;
 }
 .customer-presentation p {
     background-color: inherit;

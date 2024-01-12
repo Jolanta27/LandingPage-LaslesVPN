@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./styles/Header.css";
 
 const NavItem = ({ link, text}) => {
     return (
@@ -10,12 +10,14 @@ const NavItem = ({ link, text}) => {
 };
 
  const NavbarButton = ({ text, position}) => {
+
   return (
     <button className={`navbar-button button-${position}`}>{text}</button> 
   )
  }
 
 const Header = () => {
+    
     return (
         <nav>
          <img src="logo.JPG" id="logo" alt="logo" />
