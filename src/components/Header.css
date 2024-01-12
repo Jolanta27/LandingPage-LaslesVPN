@@ -1,12 +1,3 @@
-* {
-    color: #4F5665;
-}
-body {
-   /* margin: 52px 150px;*/
-   margin: 0;
-   padding: 0;
-}
-
 nav {
     justify-content: space-around;
     position: fixed;
@@ -26,7 +17,7 @@ nav ul {
     font-size: 20px;
 }
  .navbar-list li a:hover{
-    color: #F53855;
+    color: #F53838;
     transition: all 0.5s;
 }
 li a{

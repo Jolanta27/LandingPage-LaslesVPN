@@ -1,18 +1,15 @@
 .map-section-main {
     height: 100vh;
-
-}
-.map {
-    width: 1200px;
-    height: 800px;
-}
-.map-section-main {
     display: grid;
     place-items: center;
     row-gap: 10px;
     margin-top: 80px;
 }
-.map-description {
-   color: #0B132A;
-   font-size: 35px;
+.map-section-main h2 {
+    color: #0B132A;
+    font-size: 35px;
+}
+.map-section-main img:last-child {
+    width: 1200px;
+    height: 800px;
 }

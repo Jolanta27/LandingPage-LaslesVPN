@@ -1,6 +1,10 @@
 * {
   background-color: #F6F6F6;
-  color: #F53838;
+  color: #4F5665;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
 #logo {
   width: 150px;

@@ -12,18 +12,22 @@ const features = [
 const MiddleSection = () => {
     return (
         <div className='middle-section'>
-        <div className='middle-left-section'>
+        <div>
             <img src={middlePic} className= "middle-pic" alt="The guy with laptop" />
         </div>
-        <div className='middle-right-section'>
-            <h3 className='middle-section-description'>We provide many features you can use</h3>
-                <p className='middle-section-des-lower'>You can explore the features that we provide with fun and have their own functions each feature</p>
-                {features.map((features, index) => (
-                <div className='custom-checkbox' key={index}>
-                 <FontAwesomeIcon icon={faCheck} className='checked-font'/>
-                <p>{features}</p>
-                </div>
-                  ))}
+        <div>
+            <h3>
+                We provide many features you can use
+            </h3>
+            <p>
+                You can explore the features that we provide with fun and have their own functions each feature
+            </p>
+            {features.map((features, index) => (
+            <div className='custom-checkbox' key={index}>
+            <FontAwesomeIcon icon={faCheck} className='checked-font'/>
+            <p>{features}</p>
+            </div>
+            ))}
         </div>
         </div>
     )

@@ -3,15 +3,14 @@
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    height: 100vh;
-    
+    height: 100vh;  
 }
 .middle-pic {
     width: 508px;
     height: 415px;
     box-shadow: 3px 3px 3px rgba(168, 155, 155, 0.35);
 }
-.middle-right-section {
+.middle-section div:nth-child(2) {
     width: 550px;
     
 }
@@ -27,13 +26,14 @@
     align-items: center;
     margin-left: 60px;
 }
-.middle-section-description {
+.middle-section div h3 {
     color: #0B132A;
     font-size: 35px;
     text-align: center;
 }
-.middle-section-des-lower {
+.middle-section div p:first-child {
     font-size: 20px;
     padding: 0 15px;
     margin-left: 10px;
+    text-align: center;
 }

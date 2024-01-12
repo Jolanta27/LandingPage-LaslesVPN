@@ -33,8 +33,8 @@ const PaymentSection = () => {
         </div>
         <div className="choose-boxes">
         <div className='fst-box'>
-            <img src={payment} className="cake-pic" alt="cake" />
-            <p className='main-desc'>
+            <img src={payment} alt="cake" />
+            <p>
                 Free Plan
             </p>
             {contentFeatures.map((contentFeatures, index) => (
@@ -43,30 +43,30 @@ const PaymentSection = () => {
             </div> 
             ))}
             <p className='price'>Free</p>
-            <button className='pay-btn'>
+            <button>
                 Select
-            </button> 
+            </button>
         </div>
         <div className='scn-box'>
-            <img src={payment} className="cake-pic" alt="cake" />
-            <p className='price'>
+            <img src={payment} alt="cake" />
+            <p>
                 Standard Plan
             </p>
             {standardContentFeatures.map((standardContentFeatures, index) => (
             <div className='content-features'>
-            <p key={index} className='content-text-f'>{standardContentFeatures}</p>
+            <p key={index}>{standardContentFeatures}</p>
             </div>
             ))} 
             <p className='price'>
-                $9<span className='price-details'>/mo</span>
+                $9<span>/mo</span>
             </p>
-            <button className='pay-btn'>
+            <button>
                 Select
             </button>
         </div>
         <div className='trd-box'>
-            <img src={payment} className="cake-pic" alt="cake" />
-            <p className='price'>
+            <img src={payment} alt="cake" />
+            <p>
                 Premium Plan
             </p>
             {premiumFeatures.map((premiumFeatures, index) => (
@@ -75,9 +75,9 @@ const PaymentSection = () => {
             </div>
             ))}
             <p className='price'>
-                $12s<span className='price-details'>/mo</span>
+                $12s<span>/mo</span>
             </p>
-            <button className='pay-btn'>Select</button>
+            <button>Select</button>
        </div>
         </div>
       </>
