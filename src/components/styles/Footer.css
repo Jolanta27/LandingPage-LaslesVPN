@@ -42,7 +42,9 @@ footer {
     box-shadow: 0px 5px 15px #f5383883;
     cursor: pointer;
 }
-
+.subscription div:nth-child(2) button:hover {
+    padding: 20px;
+}
 footer div.footer-boxes:nth-child(2) p:first-of-type{
     font-size: 18px;
     margin-top: 0;
@@ -76,7 +78,9 @@ footer div.footer-boxes:nth-child(2) p:nth-of-type(2) span {
     margin: 10px;
     cursor: pointer;
     box-shadow: 1px 3px 10px rgba(136,136,136,.3);
-   
+}
+.brand-font:hover {
+    padding: 13px;
 }
 .links-1 ul {
     list-style: none;
@@ -86,6 +90,9 @@ footer div.footer-boxes:nth-child(2) p:nth-of-type(2) span {
 .custom-list li {
     margin-right: 20px;
     white-space: nowrap;
+}
+.custom-list li a:hover {
+    color: #F53838;
 }
 .links-1 h4 {
     margin-left: 30px;

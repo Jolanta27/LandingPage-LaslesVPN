@@ -66,7 +66,7 @@ const Footer = () => {
                 <h4>
                     Product
                 </h4>
-                <ul>
+                <ul className='custom-list'>
                  {LeftFooterLinks.map((link, index) => (
                     <li key={index}>
                         <a href={link.url}>{link.title}</a>

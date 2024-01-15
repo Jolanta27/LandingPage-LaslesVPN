@@ -42,6 +42,13 @@
     color: #F53838;
     font-size: 16px ;
     font-weight: bolder;
+    cursor: pointer;
+}
+.fst-box button:hover, .scn-box button:hover, .trd-box button:hover {
+    background-color: #F53838;
+    color: white;
+    transition: all 0.5s;
+    border: none;
 }
 .content-features p:last-child {
     margin-bottom: 30px;
