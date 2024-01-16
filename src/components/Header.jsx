@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles/Header.css";
+import Hamburger from 'hamburger-react'
+import { useState }  from "react";
 
 const NavItem = ({ link, text}) => {
     return (
@@ -10,18 +12,27 @@ const NavItem = ({ link, text}) => {
 };
 
  const NavbarButton = ({ text, position}) => {
-
   return (
     <button className={`navbar-button button-${position}`}>{text}</button> 
   )
  }
 
-const Header = () => {
-    
+ const HamburgerButton = ({isOpen, toggle}) => {
     return (
+        <Hamburger toggled={isOpen} size= {20} toggle={toggle}/>
+    )
+ };
+
+const Header = () => {
+    const [isOpen, setOpen] = useState(false);
+    return (
+        <>
         <nav>
-         <img src="logo.JPG" id="logo" alt="logo" />
-            <ul className="navbar-list">
+             <HamburgerButton isOpen={isOpen} toggle={() => setOpen(!isOpen)}/>
+             {isOpen && (
+                <>
+            <img src="logo.JPG" id="logo" alt="logo" />
+            <ul className="navbar-list" onClick={() => setOpen((prev) => !prev)}>
             <NavItem link="/" text="About" />
             <NavItem link="/" text="Features" />
             <NavItem link="/" text="Pricing" />
@@ -32,7 +43,10 @@ const Header = () => {
             <NavbarButton text="Sign In" position="left"/>
             <NavbarButton text="Sign Up" position="right"/>
             </div>
+            </>
+             )}    
         </nav>
+        </>
     )
 } 
 export default Header;
