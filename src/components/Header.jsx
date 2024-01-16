@@ -52,8 +52,10 @@ const Header = () => {
                         <NavItem link="/" text="Pricing" />
                         <NavItem link="/" text="Testimonials" />
                         <NavItem link="/" text="Help" />
-                        <NavbarButton text="Sign In" position="left"/>
-                        <NavbarButton text="Sign Up" position="right"/>
+                        <div className="navbar-buttons">
+                        <NavbarButton  className="navbar-button" text="Sign In" position="left"/>
+                        <NavbarButton className="navbar-button" text="Sign Up" position="right"/>
+                        </div>
                         </ul>
                      )}
                         </div> 
@@ -64,8 +66,8 @@ const Header = () => {
                         <NavItem link="/" text="Pricing" />
                         <NavItem link="/" text="Testimonials" />
                         <NavItem link="/" text="Help" />
-                        <NavbarButton text="Sign In" position="left"/>
-                        <NavbarButton text="Sign Up" position="right"/>
+                        <NavbarButton className="navbar-buttons" text="Sign In" position="left"/>
+                        <NavbarButton className="navbar-buttons" text="Sign Up" position="right"/>
                         </ul>
                     )}
                 </nav>

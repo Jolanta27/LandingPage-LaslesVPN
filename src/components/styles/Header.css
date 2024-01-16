@@ -34,12 +34,11 @@ img {
     height: 45px;
     border-radius: 10px;
 }
-.navbar-buttons {
-    justify-items: center;
-}
+
 .navbar-button {
     cursor: pointer;
     width: 130px;
+    padding: 5px 10px;
 }
 .button-left {
     border-style: none;
@@ -69,20 +68,43 @@ img {
     display: none;
 }
 @media (max-width: 768px){
-.navbar-list ul {
+*  {
+    margin: 0;
+    padding: 0;
+}
+    .navbar-list ul {
     display: block;
 }
- 
+
  .navbar-mobile {
-    display: flex;
-    flex-direction: column;
+   display: block;
 }
   .hamburger-react {
     display: block;
+    position: absolute;
+    top: 10px;
+    left: 280px;
   }
   .navbar-list {
-    justify-content: space-between;
     padding: 5px 0;
+  }
+  #logo {
+    display: none;
+  }
+  .navbar-buttons {
+    flex-direction: column;
+    margin: 8px 0 2px 15px;
+  }
+  .navbar-button {
+    border: none;
+  }
+  .navbar-buttons .navbar-button{
+    font-size: 16px;
+  }
+  nav .navbar-mobile {
+    text-align: center;
+    font-size: 16px;
+    position: relative;
   }
   
 } 
