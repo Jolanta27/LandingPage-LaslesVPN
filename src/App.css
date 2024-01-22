@@ -1,6 +1,8 @@
 * {
   background-color: #F6F6F6;
   color: #4F5665;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
