@@ -1,126 +1,106 @@
-nav {
-    justify-content: space-around;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    padding: 20px 0;
-}
-.navbar-list, nav ul{
-    display: flex;
-    justify-content: center;
-}
-.menu-items-open {
-    display: flex;
-    justify-content: center;
-}
-.navbar-buttons {
-    display: flex;
-    margin-left: 80px;
-}
-nav ul {
-    list-style: none;
-}
-.navbar-list, .navbar-button {
-    font-size: 20px;
-}
- .navbar-list li a:hover{
-    color: #F53838;
-    transition: all 0.5s;
-}
-li a{
-    padding: 0 30px;
-    text-decoration: none;
-}
-img {
-    width: 150px;
-    height: 45px;
-    border-radius: 10px;
-}
+    *  {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .menu-items {
+        width: 100%;
+    }
+    .menu-items ul li a {
+        text-decoration: none;
+        display: block;
+        border-radius: 40px;
+        width: 100%;
+    }
+    .menu-items ul {
+        list-style-type: none;
+    }
+    .menu-items li a:hover, .navbar-buttons .navbar-button:hover {
+        background-color: #F53838;
+        color: white;
+    }
+   
+    .navbar-button {
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+        border-radius: 40px;
+    }
 
-.navbar-button {
-    cursor: pointer;
-    width: 130px;
-    padding: 5px 10px;
-}
-.button-left {
-    border-style: none;
-    font-weight: bold;
-}
-.button-left:hover {
-    color: #F53838;
-    transition: all 0.5s;
-}
-.button-right:hover {
-    background-color: #F53838;
-    color: white;
-    transition: all 0.5s;
-    border: none;
-}
-.button-right {
-    font-weight: bold;
-    border-radius: 40px;
-    color: #F53855;
-    border-color: #F53855;
-}
-.navbar-laptop {
-    display: flex;
-    padding: 0 20px;
-}
-.hamburger-react {
-    display: none;
-}
-@media (max-width: 768px){
-*  {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-.menu-items {
-    display: block;
-}
+    @media (max-width: 768px){ 
+    * {
+        font-size: 16px;
+    }  
+    .menu-items ul {
+        display: none;
+    }
+    .menu-items ul li {
+        display: flex;
+        margin: 2px;
+        
+    }
+    .menu-items ul li a {
+        margin: 0 10px;
+        display: block;
+        text-align: center;
+    }
+    .menu-items ul.open, .navbar-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-items ul.open > *, .navbar-buttons > * {
+        
+        padding: 2px;
+        width: 100%;
+    }
+    .hamburger-react {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+    }
+   
+    #logo {
+        display: none;
+    }
+    }
 
-.menu-items li a {
-    display: block;
-    border-radius: 40px;
-    padding: 10px 0;
+    @media (min-width: 769px) {
+    * {
+        font-size: 20px;
+    }
+    .menu-items {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        margin: 0 30px;
+        z-index: 1000;
+        padding: 10px 0;
+        }
+    .menu-items ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0 10px;
+    }
+    .menu-items ul li a {
+        margin: 0 10px;
+        padding: 10px 20px; 
+    }
+    .hamburger-react {
+        display: none;
+    }
+    .navbar-button {
+        margin: 0 10px;
+        padding: 10px 20px;   
+    }
+    .button-right {
+        color: #F53855;
+        border-color: #F53855;
+    }
 }
-.menu-items li a:hover , .menu-items li a:hover, .navbar-buttons .navbar-button:hover {
-    background-color: #F53838;
-    width: 100%;
-    color: white;
-    border-radius: 40px;
-    padding: 10px 0;
-}
-  .hamburger-react {
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 550px;
-  }
-  .mobile-link:hover {
-    color: red;
-  }
-  #logo {
-    display: none;
-  }
-  .navbar-buttons {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-  }
-  .navbar-button {
-    border: none;
-  }
-  .navbar-buttons .navbar-button{
-    font-size: 16px;
-  }
-  nav .navbar-mobile {
-    text-align: center;
-    font-size: 16px;
-    position: relative;
-  }
-
-} 
