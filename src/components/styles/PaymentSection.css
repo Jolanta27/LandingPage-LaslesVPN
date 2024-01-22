@@ -1,32 +1,50 @@
-.plan-description {
-    text-align: center;
+    .plan-section {
+        margin: 100px 10px 0px 10px;
+        text-align: center;
+    }
+    .plan-section h3 {
+        color: #0B132A;
+    }
+    .choose-boxes p:nth-child(2), .price {
+        color: #0B132A;
+        font-weight: 700;
+    }
+    .price span {
+        color: rgb(86, 86, 225);
+    }
+    .fst-box, .scn-box, .trd-box {
+        width: 330px;
+        height: 600px;
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+        padding: 30px 5px 25px 5px;
+        text-align: center;
+    }
+@media (max-width: 768px){
+    .plan-section h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .plan-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
 }
-.plan-description h3 {
-    font-size: 35px;
-    color: #0B132A;
-}
-.plan-description p {
-    font-size: 20px;
-}
-.choose-boxes p:nth-child(2), .price {
-    color: #0B132A;
-    font-weight: 700;
-}
-.price span {
-    color: rgb(86, 86, 225);
-}
-.choose-boxes {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 60px;
-}
-.fst-box, .scn-box, .trd-box {
-    width: 330px;
-    height: 600px;
-    border: 2px solid #DDDDDD;
-    border-radius: 10px;
-    padding: 30px 5px 25px 5px;
-    text-align: center;
+@media (min-width: 769px){
+    .plan-section h3 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .plan-section p {
+        font-size: 20px;
+    }
+    .choose-boxes {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 60px;
+    }
 }
 
 .choose-boxes div img{
