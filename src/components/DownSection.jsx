@@ -22,7 +22,7 @@ const Statistic = ({ icon, number, label}) => {
 
 const DownSection = () => {
 return (
-    <div className="user-location-server-section">
+    <div className="down-section-main">
         <div className='section'>
         <Statistic icon={faUser} number="90+" label="Users"/>
         <VerticalLine />
