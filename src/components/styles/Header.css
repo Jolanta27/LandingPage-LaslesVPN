@@ -1,4 +1,3 @@
-
 nav {
     justify-content: space-around;
     position: fixed;
@@ -11,9 +10,13 @@ nav {
     display: flex;
     justify-content: center;
 }
+.menu-items-open {
+    display: flex;
+    justify-content: center;
+}
 .navbar-buttons {
     display: flex;
-    margin-left: 90px;
+    margin-left: 80px;
 }
 nav ul {
     list-style: none;
@@ -71,29 +74,42 @@ img {
 *  {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
-    .navbar-list ul {
+.menu-items {
     display: block;
 }
 
- .navbar-mobile {
-   display: block;
+.menu-items li a {
+    display: block;
+    border-radius: 40px;
+    padding: 10px 0;
+}
+.menu-items li a:hover , .menu-items li a:hover, .navbar-buttons .navbar-button:hover {
+    background-color: #F53838;
+    width: 100%;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 0;
 }
   .hamburger-react {
     display: block;
     position: absolute;
     top: 10px;
-    left: 280px;
+    left: 550px;
   }
-  .navbar-list {
-    padding: 5px 0;
+  .mobile-link:hover {
+    color: red;
   }
   #logo {
     display: none;
   }
   .navbar-buttons {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    margin: 8px 0 2px 15px;
+    align-items: center;
+    margin-left: 0;
   }
   .navbar-button {
     border: none;
@@ -106,5 +122,5 @@ img {
     font-size: 16px;
     position: relative;
   }
-  
+
 } 
