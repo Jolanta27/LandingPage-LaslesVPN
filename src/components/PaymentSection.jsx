@@ -54,7 +54,7 @@ const PaymentSection = () => {
             </p>
             {standardContentFeatures.map((standardContentFeatures, index) => (
             <div className='content-features'>
-            <p key={index}>{standardContentFeatures}</p>
+            <p key={index} className='content-text-f'>{standardContentFeatures}</p>
             </div>
             ))} 
             <p className='price'>
