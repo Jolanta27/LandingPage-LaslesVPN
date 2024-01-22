@@ -4,6 +4,7 @@
         box-sizing: border-box;
     }
     .menu-items {
+        position: relative;
         width: 100%;
     }
     .menu-items ul li a {
@@ -36,8 +37,7 @@
     }
     .menu-items ul li {
         display: flex;
-        margin: 2px;
-        
+        margin: 2px; 
     }
     .menu-items ul li a {
         margin: 0 10px;
@@ -50,16 +50,21 @@
         align-items: center;
     }
     .menu-items ul.open > *, .navbar-buttons > * {
-        
         padding: 2px;
         width: 100%;
     }
-    .hamburger-react {
-        display: block;
-        position: fixed;
+    .menu-items ul.open {
+        position:absolute;
         top: 0;
         right: 0;
+        width: 100%;
         z-index: 1000;
+    }
+    .hamburger-react {
+        display: block;
+        z-index: 1002;
+        top: 0;
+        right: 0;
     }
    
     #logo {
