@@ -29,7 +29,7 @@ const Footer = () => {
         {'title': 'Become Parter', url: '/becomepartner'}
     ]
     return (
-        <footer>
+        <footer id="footer">
             <div className="footer-boxes">
                 <div className='subscription'>
                     <div className='subscription-text'>

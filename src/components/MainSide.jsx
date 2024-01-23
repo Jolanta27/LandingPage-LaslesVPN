@@ -7,10 +7,12 @@ import MapSection from './MapSection';
 import RecomendationSection from './RecomendationSection';
 import Footer from './Footer';
 
+
 const FirstSide = () => {
+
 return (
     <>
-    <Header/>
+    <Header />
     <MainSection />
     <DownSection />
     <MiddleSection />

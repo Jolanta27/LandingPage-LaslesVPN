@@ -2,16 +2,18 @@ import './styles/MiddleSection.css';
 import middlePic from '../../src/pictures/features-illustration.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
 
 
-const MiddleSection = () => {
+const MiddleSection = React.forwardRef((props, ref) => {
     const features = [
         'Powerful online protection',
         'Internet without borders',
         'Supercharged VPN'
     ];
+
     return (
-        <div className='middle-section'>
+        <div ref={ref} id="features" className='middle-section'>
         <div>
             <img src={middlePic} className= "middle-pic" alt="The guy with laptop" />
         </div>
@@ -30,6 +32,6 @@ const MiddleSection = () => {
             ))}
         </div>
         </div>
-    )
-}
+    );
+});
 export default MiddleSection;

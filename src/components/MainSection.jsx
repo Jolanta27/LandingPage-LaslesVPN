@@ -4,7 +4,7 @@ import picture from '../../src/pictures/header-illustration.svg';
 
 const MainSection = () => {
     return (
-        <div className='main-section'>
+        <div id="about" className='main-section'>
         <div>
         <h1 className='main-section-main'>
             Want anything to be easy with <span>LaslesVPN.</span>

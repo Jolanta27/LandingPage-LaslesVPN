@@ -21,7 +21,7 @@ const RecomendationSection = () => {
     ]
     return (
         <>
-        <div className="img-companies">
+        <div id="testimonials" className="img-companies">
           {imageGallery.map((imageGallery, index) => (
             <img  key={index} src={imageGallery} alt={`Brand ${index + 1}`}/>
           ))}

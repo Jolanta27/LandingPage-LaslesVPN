@@ -23,7 +23,7 @@ const premiumFeatures = [...standardContentFeatures, ...standardPremiumFeatures]
 const PaymentSection = () => {
     return (
         <>
-        <div className="plan-section">
+        <div id="pricing" className="plan-section">
         <h3>
             Choose your plan
         </h3>

@@ -1,4 +1,3 @@
-
     .menu-items {
         position: relative;
         max-width: 100%;
@@ -6,6 +5,7 @@
     .menu-items ul li a {
         text-decoration: none;
         display: block;
+        text-align: center;
         border-radius: 40px;
         width: 100%;
     }

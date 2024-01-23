@@ -3,7 +3,8 @@ import "./styles/Header.css";
 import Hamburger from 'hamburger-react'
 import { useState } from "react";
 
-const NavItem = ({ link, text}) => {
+
+const NavItem = ({ link, text }) => {
     return (
         <li>
             <a href={link}>{text}</a>
@@ -11,29 +12,32 @@ const NavItem = ({ link, text}) => {
     );
 };
 
- const NavbarButton = ({ text, position}) => {
+ const NavbarButton = ({ text, position}) => { 
   return (
     <button className={`navbar-button button-${position}`}>{text}</button>
   )
  }
 
- const MenuItems = () => (
+
+ const MenuItems = () => {
+
+    return (
     <>
-        <NavItem link="/" text="About" />
-        <NavItem link="/" text="Features" />
-        <NavItem link="/" text="Pricing" />
-        <NavItem link="/" text="Testimonials" />
-        <NavItem link="/" text="Help" />
+        <NavItem link="#about" text="About" />
+        <NavItem link="#features" text="Features" />
+        <NavItem link="#pricing" text="Pricing" />
+        <NavItem link="#testimonials" text="Testimonials" />
+        <NavItem link="#footer" text="Help" />
         <div className="navbar-buttons">
         <NavbarButton text="Sign In" position="left"/>
         <NavbarButton text="Sign Up" position="right"/>
         </div>
     </>
  );
-
+    };
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
-
+    
            return (
                 <nav className="menu-items">
                     <img src="logo.JPG" id="logo" alt="logo" />
