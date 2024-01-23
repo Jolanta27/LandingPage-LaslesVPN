@@ -39,7 +39,7 @@ const RecomendationSection = () => {
                 <div>
                 <img src={viezh} alt="customer" />
                 </div>
-                 <div>
+                 <div className='name-intro'>
                     <p>
                         Wiezh Robert
                     </p>
@@ -61,7 +61,7 @@ const RecomendationSection = () => {
             <div>
             <img src={yessica} alt="customer" />
             </div>
-            <div>
+            <div className='name-intro'>
                 <p>
                     Yessica Christy
                 </p>
@@ -83,7 +83,7 @@ const RecomendationSection = () => {
                 <div>
                 <img src={kim} alt="customer" />
                 </div>
-            <div>
+            <div className='name-intro'>
                 <p>
                     Kim Young Jou
                 </p>
