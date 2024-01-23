@@ -2,25 +2,26 @@ import React from "react";
 import "./styles/Header.css";
 import Hamburger from 'hamburger-react'
 import { useState } from "react";
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 
 const NavItem = ({ link, text }) => {
     return (
         <li>
-            <a href={link}>{text}</a>
+            <HashLink smooth to={`/${link}`}>{text}</HashLink>
         </li>
     );
 };
 
- const NavbarButton = ({ text, position}) => { 
+ const NavbarButton = ({ text, position, link }) => { 
   return (
-    <button className={`navbar-button button-${position}`}>{text}</button>
+    <Link to={link} className={`navbar-button button-${position}`}>{text}</Link>
   )
  }
 
 
  const MenuItems = () => {
-
     return (
     <>
         <NavItem link="#about" text="About" />
@@ -29,15 +30,15 @@ const NavItem = ({ link, text }) => {
         <NavItem link="#testimonials" text="Testimonials" />
         <NavItem link="#footer" text="Help" />
         <div className="navbar-buttons">
-        <NavbarButton text="Sign In" position="left"/>
-        <NavbarButton text="Sign Up" position="right"/>
+        <li><NavbarButton text="Sign In" position="left" link="/signin"/></li>
+        <li><NavbarButton text="Sign Up" position="right" link="/signup"/></li>
         </div>
     </>
  );
     };
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
-    
+
            return (
                 <nav className="menu-items">
                     <img src="logo.JPG" id="logo" alt="logo" />

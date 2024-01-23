@@ -2,7 +2,7 @@
         position: relative;
         max-width: 100%;
     }
-    .menu-items ul li a {
+    .menu-items .navbar-button, .menu-items ul li a {
         text-decoration: none;
         display: block;
         text-align: center;
@@ -103,5 +103,13 @@
     .button-right {
         color: #F53855;
         border-color: #F53855;
+    }
+    .navbar-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .content {
+        margin-top: 100px;
     }
 }
