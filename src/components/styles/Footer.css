@@ -1,12 +1,6 @@
+
 footer {
-    margin: 50px 0 20px 0;
-    padding: 20px 0;
-}
-.footer-boxes { 
-    padding: 0;
-    margin: 30px 0;
-    display: flex;
-    justify-content: space-around;
+    margin: 10px auto 20px auto;
 }
 .subscription {
     background-color: white;
@@ -15,6 +9,7 @@ footer {
     border-radius: 15px;
     justify-content: space-around;
     margin: 40px;
+    padding: 30px 0;
     box-shadow: 1px 3px 10px rgba(136,136,136,.4);
 }
 .subscription-text {
@@ -27,17 +22,13 @@ footer {
     background-color: inherit;
 }
 .subscription h4 {
-    font-size: 35px;
     color: #0B132A;
 }
-.subscription div:nth-child(2) button{
+.subscription div:nth-child(2) button {
     background-color: #f53838;
     border-style: none;
     border-radius: 10px;
-    width: 250px;
-    padding: 18px 0;
     color: white;
-    font-size: 18px;
     font-weight: 500;
     box-shadow: 0px 5px 15px #f5383883;
     cursor: pointer;
@@ -45,55 +36,121 @@ footer {
 .subscription div:nth-child(2) button:hover {
     padding: 20px;
 }
-footer div.footer-boxes:nth-child(2) p:first-of-type{
-    font-size: 18px;
-    margin-top: 0;
-}
-footer div.footer-boxes:nth-child(2) p:nth-of-type(2){
-    font-size: 16px;
-}
 footer div.footer-boxes:nth-child(2) p:nth-of-type(2) span {
     font-weight: 800;
 }
-.footer-logos p:nth-of-type(3) {
-    font-size: 12px;
-}
- .footer-links {
+.footer-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;;
     margin-top: 30px;
 }
-.left-links, .middle-links, .right-links {
-    display: flex;
-    flex-direction: column;
-}
-
 .brand-font {
-    width: 35px;
-    height: 30px;
     border: 2px solid #fa9999;
     color: #F53838;
     border-radius: 50%;
+    cursor: pointer;
     padding: 10px;
     margin: 10px;
-    cursor: pointer;
     box-shadow: 1px 3px 10px rgba(136,136,136,.3);
 }
 .brand-font:hover {
     padding: 13px;
 }
-.links-1 ul {
-    list-style: none;
-    padding: 0;
-    font-size: 14px;
-}
 .custom-list li {
-    margin-right: 20px;
-    white-space: nowrap;
+    list-style: none;
+}
+.custom-list li a {
+    text-decoration: none;
+    font-size: 16px;
 }
 .custom-list li a:hover {
     color: #F53838;
 }
-.links-1 h4 {
-    margin-left: 30px;
+@media (max-width: 768px){
+    .footer-boxes {
+        margin: 0 20px;
+    }
+    .subscription {
+        flex-direction: column;
+        width: 80%;
+    }
+    .subscription .subscription-text h4 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .subscription .subscription-text p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+    .subscription div:nth-child(2) button {
+        padding: 14px;
+    }
+   
+    footer div.footer-boxes:nth-child(2) p:first-of-type{
+      font-size: 16px; 
+      text-align: center;
+      padding: 5px;
+    }
+    .brand-font {
+        width: 20px;
+        height: 20px;
+    }
+    .links-1 h4 {
+        font-size: 14px;
+    }
+    .custom-list li a {
+        font-size: 12px;
+    }
+    .footer-info .footer-text {
+        font-size: 10px;
+    }
+    .footer-info {
+      margin: 15px;
+    }
 }
+@media (min-width: 769px) {
+.footer-boxes { 
+    display: block;
+    margin: 30px auto;
+}
+.subscription {
+    padding: 30px 0;
+}
+.subscription h4 {
+    font-size: 35px;
+}
+.subscription div:nth-child(2) button {
+    width: 250px;
+    padding: 18px 0;
+    font-size: 18px;
+}
+.footer-text {
+    font-size: 14px;
+}
+.left-links, .middle-links, .right-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.brand-font {
+    width: 35px;
+    height: 30px;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-info {
+    width: 100%;
+    text-align: center;
+}
+
+}
+
+
+
+
+
+
+

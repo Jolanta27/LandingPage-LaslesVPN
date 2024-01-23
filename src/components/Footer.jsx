@@ -47,6 +47,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <div className='footer-content'>
             <div className='footer-boxes'>
                 <div>
                 <img src={logo} alt="logo" />
@@ -56,11 +57,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faFacebookF} className='brand-font'/>
                 <FontAwesomeIcon icon={faTwitter} className='brand-font'/>
                 <FontAwesomeIcon icon={faInstagram} className='brand-font'/>
-                <p>©{currentYear}Lasles<span>VPN</span></p>
-                <p>
-                    Developed by Jolanta  Galczynska
-                </p>
-                </div>
+              </div>
             <div className='footer-links'>
             <div className='links-1 left-links'>
                 <h4>
@@ -98,6 +95,13 @@ const Footer = () => {
                 ))}
                 </ul>
                 </div>
+                </div>
+                </div>
+                <div className='footer-info'>
+                <p className='footer-text'>©{currentYear}Lasles<span>VPN</span></p>
+                <p className='footer-text'>
+                    Developed by Jolanta  Galczynska
+                </p>
                 </div>
             </div>
         </footer>
