@@ -19,12 +19,14 @@ const SignInForm = () => {
         <Form className='form-container'>
             <h1>Sign In</h1>
             <label htmlFor="emal"> Email Address</label>
-            <Field type="email" name="email" />
+            <Field type="email" name="email" placeholder="Enter your email"/>
             <ErrorMessage name="email"component="div"/>
             <label htmlFor="password">Password</label>
-            <Field type="password" name="password" />
+            <Field type="password" name="password" placeholder="Enter your password"/>
             <ErrorMessage name="password" component="div" />
+            <a href="/forgot-password">Forgot your password?</a>
             <button type="submit">Sign In</button>
+           
             </Form>
         </Formik>
         </div>
