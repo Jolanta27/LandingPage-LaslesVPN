@@ -4,8 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF } from  '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from  '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from  '@fortawesome/free-brands-svg-icons';
+import { useState } from 'react';
+import Subscription from './Subscription';
 
 const Footer = () => {
+    const [newsletter, setNewsletter] = useState(false);
     const currentYear = new Date().getFullYear();
 
     const LeftFooterLinks = [
@@ -29,6 +32,7 @@ const Footer = () => {
         {'title': 'Become Parter', url: '/becomepartner'}
     ]
     return (
+        <>
         <footer id="footer">
             <div className="footer-boxes">
                 <div className='subscription'>
@@ -41,11 +45,13 @@ const Footer = () => {
                         </p>
                     </div>
                     <div>
-                        <button>
+                        <button onClick={() => 
+                        setNewsletter(true)}>
                             Subscribe Now
                         </button>
                     </div>
                 </div>
+               
             </div>
             <div className='footer-content'>
             <div className='footer-boxes'>
@@ -103,8 +109,12 @@ const Footer = () => {
                     Developed by Jolanta  Galczynska
                 </p>
                 </div>
+                
             </div>
+         
         </footer>
+           {newsletter && <Subscription />}
+           </>
     )
 }
 export default Footer;
