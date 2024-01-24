@@ -1,18 +1,11 @@
-
-.body {
-    margin: 0;
-    padding: 0;
-}
 .form-container .btn {
     display: flex;
     justify-content: center;
-
 }
 .form-content {
     background-color: white;
 }
 .signup-header {
-    font-size: 30px;
     margin-bottom: 20px;
 }
 .form-content input::placeholder {
@@ -40,5 +33,17 @@ button:hover {
     background-color: white;
 
 }
-@media (max-width: 768px){}
-@media (min-width: 769px){}
+@media (max-width: 768px){
+    .signup-header {
+        font-size: 20px; 
+    }
+    .sign-up-btn {
+        padding: 10px 30px;
+        margin: 10px 25px;
+    }
+}
+@media (min-width: 769px){
+    .signup-header {
+        font-size: 30px; 
+    }
+}

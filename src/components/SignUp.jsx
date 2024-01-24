@@ -62,7 +62,7 @@ const SignUpForm = () => {
                      <h1 style={styles.childElement} className='signup-header'>
                         Sign Up
                     </h1>
-                     <Form className='form-content'>
+                     <Form className='form-content' noValidate>
                           <div style={styles.childElement}>
                             <label style={{...styles.childElement, ...styles.firstNameLabel}} className="data-info" htmlFor="firstName">
                                 First Name
