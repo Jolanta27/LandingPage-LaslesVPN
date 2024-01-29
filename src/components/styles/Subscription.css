@@ -3,36 +3,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    max-width: 40%;
-    height: 600px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin: 40px auto;
     position: relative;
 }
 .envelope-icon {
-    color: #f44336;
     border: 2px solid rgb(210, 206, 206);
     border-radius: 50%;
-    padding: 20px;
-    font-size: 20px !important;
-    margin-bottom: 20px;
     position: absolute;
     top: -25px;
 }
 .subscription-content h1 {
-    font-size: 40px;
     color: #f44336;
     background-color: inherit;
 }
 .subscription-content p {
-    font-size: 22px;
     background-color: inherit;
 }
 .email-form input {
-  outline: none;
+    outline: none;
 }
 .email-form {
     background-color: white;
@@ -42,17 +32,11 @@
     background-color: white;
 }
 .email-form input[type="email"] {
-    padding: 10px;
     border: 1px solid rgb(210, 206, 206);
     border-radius: 5px;
-    width: 300px;
-    font-size: 20px;
 }
-.choose-points label, .choose-points div{
+.choose-points label, .choose-points div, div.choose-points + div label{
     background-color: white;
-}
-div.choose-points + div label {
-   background-color: white;
 }
 input[type="checkbox"] {
     margin-right: 10px;
@@ -61,9 +45,63 @@ input[type="checkbox"] {
     background-color: #f44336;
     color: #fff;
     border: none;
-    padding: 15px 30px;
-    font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+}
+@media (max-width: 768px){
+    .subscription-content {
+        gap: 15px;
+        max-width: 80%;
+        height: 80%;
+        margin: 40px auto;
+    }
+    .envelope-icon {
+        padding: 10px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .subscription-content h1 {
+        font-size: 30px;
+    }
+    .subscription-content p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .subscription-content button {
+        padding: 8px 15px;
+        
+    }
+    .subscription-content button:hover {
+        padding: 11px 21px;
+    }
+}
+@media (min-width: 769px){
+    .subscription-content {
+        gap: 20px;
+        max-width: 40%;
+        height: 600px;
+        margin: 30px auto;
+    }
+    .envelope-icon {
+        padding: 20px;
+        font-size: 20px !important;
+        margin-bottom: 20px;
+    }
+    .subscription-content h1 {
+        font-size: 40px;
+    }
+    .subscription-content p {
+        font-size: 22px;
+    }
+    .email-form input[type="email"] {
+        width: 300px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .subscription-content button {
+        padding: 15px 30px;
+        font-size: 20px;
+        
+    }
 }

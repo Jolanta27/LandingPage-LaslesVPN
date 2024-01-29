@@ -66,6 +66,18 @@ footer div.footer-boxes:nth-child(2) p:nth-of-type(2) span {
 .custom-list li a:hover {
     color: #F53838;
 }
+.close-button {
+    border-radius: 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.close-button:hover {
+    padding: 11px 21px;
+}
+
 @media (max-width: 768px){
     .footer-boxes {
         margin: 0 20px;
@@ -108,6 +120,10 @@ footer div.footer-boxes:nth-child(2) p:nth-of-type(2) span {
     .footer-info {
       margin: 15px;
     }
+    .close-button {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
 }
 @media (min-width: 769px) {
 .footer-boxes { 
@@ -144,6 +160,10 @@ footer div.footer-boxes:nth-child(2) p:nth-of-type(2) span {
 .footer-info {
     width: 100%;
     text-align: center;
+}
+.close-button {
+    padding: 10px 20px;
+    font-size: 20px;
 }
 
 }

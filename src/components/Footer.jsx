@@ -6,6 +6,7 @@ import { faTwitter } from  '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from  '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
 import Subscription from './Subscription';
+import ReactModal from 'react-modal';
 
 const Footer = () => {
     const [newsletter, setNewsletter] = useState(false);
@@ -113,7 +114,28 @@ const Footer = () => {
             </div>
          
         </footer>
-           {newsletter && <Subscription />}
+           <ReactModal
+            isOpen={newsletter}
+            onRequestClose={() => setNewsletter(false)}
+            style={{
+                overlay: {
+                    position: 'fixed',
+                    top: '0',
+                    left: '0',
+                    right: '0',
+                    bottom: '0px',
+                    backgroundColor: 'rgba(0,0,0,0.75)',
+                },
+                content: {
+                   position: 'absolute',
+                    top: '60px',
+                    
+                }
+            }}
+            >
+            <Subscription/>
+            <button onClick={() => setNewsletter(false)} className='close-button'>Close</button>
+           </ReactModal>
            </>
     )
 }
