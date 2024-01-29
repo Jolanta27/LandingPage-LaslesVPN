@@ -35,11 +35,13 @@ button:hover {
 }
 @media (max-width: 768px){
     .mobile-form-content {
-        padding: 0px 50px;
-        height: 100%;
+        padding: 0px 30px;
+        height: 80%;
+        margin: 20px auto 0px;
     }
     .mobile-form-content .form-content {
         padding: 30px 50px;
+
     }
     .signup-header {
         font-size: 20px; 
@@ -47,6 +49,10 @@ button:hover {
     .sign-up-btn {
         padding: 10px 30px;
         margin: 10px 25px;
+    }
+    .mobile-form-content .close-btn {
+        margin: -60px 0px 0px 0px;
+        padding: 10px;
     }
 }
 @media (min-width: 769px){

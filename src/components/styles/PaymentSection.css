@@ -64,9 +64,13 @@
         width: 70px;
         height: 80px;
     }
-    .fst-box, .scn-box, .trd-box {
+    .fst-box, .scn-box {
         width: 50%;
         min-height: 250px;
+    }
+    .trd-box {
+        width: 50%;
+        min-height: 260px;
     }
     .fst-box button, .scn-box button, .trd-box button {
         padding: 2px;

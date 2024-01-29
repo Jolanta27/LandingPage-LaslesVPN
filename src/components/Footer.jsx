@@ -51,8 +51,7 @@ const Footer = () => {
                             Subscribe Now
                         </button>
                     </div>
-                </div>
-               
+                </div>  
             </div>
             <div className='footer-content'>
             <div className='footer-boxes'>
@@ -112,7 +111,6 @@ const Footer = () => {
                 </div>
                 
             </div>
-         
         </footer>
            <ReactModal
             isOpen={newsletter}
