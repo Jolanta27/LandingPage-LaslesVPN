@@ -4,6 +4,7 @@ import Hamburger from 'hamburger-react'
 import { useState } from "react";
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
+import SignUpForm from "./SignUp";
 
 
 const NavItem = ({ link, text }) => {
@@ -14,14 +15,14 @@ const NavItem = ({ link, text }) => {
     );
 };
 
- const NavbarButton = ({ text, position, link }) => { 
+ const NavbarButton = ({ text, position, link, onClick }) => { 
   return (
-    <Link to={link} className={`navbar-button button-${position}`}>{text}</Link>
+    <Link to={link} className={`navbar-button button-${position}`} onClick={onClick}>{text}</Link>
   )
  }
 
 
- const MenuItems = () => {
+ const MenuItems = ({ setShowForm }) => {
     return (
     <>
         <NavItem link="#about" text="About" />
@@ -31,21 +32,23 @@ const NavItem = ({ link, text }) => {
         <NavItem link="#footer" text="Help" />
         <div className="navbar-buttons">
         <li><NavbarButton text="Sign In" position="left" link="/signin"/></li>
-        <li><NavbarButton text="Sign Up" position="right" link="/signup"/></li>
+        <li><NavbarButton onClick={() => setShowForm(true)} text="Sign Up" position="right" link="/signup"/></li>
         </div>
     </>
  );
     };
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
+    const [showForm, setShowForm] = useState(false);
 
            return (
                 <nav className="menu-items">
                     <img src="logo.JPG" id="logo" alt="logo" />
                           <Hamburger toggled={isOpen} size={25} toggle={setOpen}/>
                           <ul className={isOpen ? "open" : ""}>
-                     <MenuItems />
+                     <MenuItems setShowForm={setShowForm}/>
                      </ul> 
+                     {showForm && <SignUpForm onClose={() => setShowForm(false)} /> }
                 </nav>
             );
         };

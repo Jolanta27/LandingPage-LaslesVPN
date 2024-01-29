@@ -1,12 +1,12 @@
 import React from 'react';
 import './styles/MainSection.css';
 import picture from '../../src/pictures/header-illustration.svg';
-import SignUp from './SignUp';
+import SignUpForm from './SignUp';
 import { useState } from 'react';
 import './styles/SignUp.css';
 
 
-const MainSection = () => {
+const MainSection = ({ onClose }) => {
     const [showForm, setShowForm] = useState(false);
 
     return (
@@ -25,7 +25,9 @@ const MainSection = () => {
     <div className='parent-img'>
     <img src={picture} alt="The guy working" />
     </div>
-    {showForm && <SignUp />}
+    <div className='form-container-sign-up'>
+    {showForm && <SignUpForm onClose = {() => setShowForm(false)}/>} 
+</div>
     </div>
     );
 };

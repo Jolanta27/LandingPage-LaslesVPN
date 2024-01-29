@@ -2,8 +2,9 @@ import './styles/SignUp.css';
 import { Formik, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
-const SignUpForm = () => {
+const SignUpForm = ({ onClose, showForm }) => {
     const navigate = useNavigate();
 
     const styles = {
@@ -40,6 +41,11 @@ const SignUpForm = () => {
             outline: 'none'
         }
         }
+        useEffect(() => {
+            if(!showForm) {
+                navigate('/');
+            }
+        }, [showForm, navigate]);
 
         const validate = Yup.object({
         firstName: Yup.string().required("Firstname Required"),
@@ -131,7 +137,7 @@ const SignUpForm = () => {
                </div>
             )}
             </Formik>
-            <button onClick={() => navigate('/')} className='close-btn'>Close</button> 
+            <button onClick={() => { onClose(); navigate('/'); }} className='close-btn'>Close</button> 
         </div>
    
     );
