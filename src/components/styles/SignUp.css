@@ -34,6 +34,13 @@ button:hover {
 
 }
 @media (max-width: 768px){
+    .mobile-form-content {
+        padding: 0px 50px;
+        height: 100%;
+    }
+    .mobile-form-content .form-content {
+        padding: 30px 50px;
+    }
     .signup-header {
         font-size: 20px; 
     }

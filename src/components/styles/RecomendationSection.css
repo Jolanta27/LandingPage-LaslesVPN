@@ -55,6 +55,9 @@
         margin-right: 5px;
     }
 @media (max-width: 768px){
+    .testimonials {
+       margin-top: 0px;
+    }
     .customers h3 {
         font-size: 20px;
         margin-bottom: 10px;
@@ -68,6 +71,7 @@
     }
     .customers-boxes {
         flex-direction: column;
+        margin-top: 10px;
     }
     .name-intro p{
         margin-bottom: 10px;
@@ -93,8 +97,7 @@
 }
 @media (min-width: 769px){
     #testimonials {
-        height: 100%;
-       padding-top: 100px;
+        padding-top: 0px;
     }
     .customers h3{
         font-size: 45px;

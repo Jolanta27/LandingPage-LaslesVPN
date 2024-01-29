@@ -49,6 +49,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .plan-section p {
+        margin: 10px;
+    }
     .choose-boxes {
         display: flex;
         flex-direction: column;

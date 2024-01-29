@@ -8,7 +8,6 @@
 .map-section img {
     width: 100%;
     height: auto;  
-    z-index: 1;
 }
 .text-container {
     display: flex;
@@ -29,12 +28,7 @@
 }
 @media (max-width: 768px){
     .map-section {
-        position: relative;
-    }
-    .map-section img {
-        position: absolute;
-        top: 0;
-        left: 0
+        margin-top: 10px;
     }
 .map-section h2, .map-section p {
     text-align: center;
