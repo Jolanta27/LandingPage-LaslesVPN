@@ -1,25 +1,69 @@
-.my-form-container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-  
-}
 .subscription-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 500px;
-    height: 100%;
-    max-height: 500px;
+    justify-content: center;
+    gap: 20px;
+    max-width: 40%;
+    height: 600px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-bottom: 30px;
+    margin: 40px auto;
+    position: relative;
 }
 .envelope-icon {
-    font-size: 100px;
     color: #f44336;
+    border: 2px solid rgb(210, 206, 206);
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+    position: absolute;
+    top: -25px;
+}
+.subscription-content h1 {
+    font-size: 40px;
+    color: #f44336;
+    background-color: inherit;
+}
+.subscription-content p {
+    font-size: 22px;
+    background-color: inherit;
+}
+.email-form input {
+  outline: none;
+}
+.email-form {
+    background-color: white;
+}
+.email-form label {
+    margin-right: 10px;
+    background-color: white;
+}
+.email-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid rgb(210, 206, 206);
+    border-radius: 5px;
+    width: 300px;
+    font-size: 20px;
+}
+.choose-points label, .choose-points div{
+    background-color: white;
+}
+div.choose-points + div label {
+   background-color: white;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+.subscription-content button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
