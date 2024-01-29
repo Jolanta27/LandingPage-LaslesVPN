@@ -15,7 +15,7 @@
    border: 1px solid #DDDDDD;
    box-shadow: 1px 3px 10px rgba(136,136,136,.4);
 }
-.form-container button {
+.form-container button, .close-btn {
     background-color: #f53838;
     border-style: none;
     cursor: pointer;
@@ -92,5 +92,10 @@
     }
     .form-container a {
         font-size: 15px;
+    }
+    .close-btn {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
     }
 }

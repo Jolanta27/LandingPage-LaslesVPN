@@ -1,6 +1,7 @@
     .plan-section {
-        margin: 20px 10px 0px 10px;
+        margin-top: 30px auto;
         text-align: center;
+        height: 100%;
     }
     .plan-section h3 {
         color: #0B132A;
@@ -73,6 +74,9 @@
     }
 }
 @media (min-width: 769px){
+    .plan-section {
+        padding-top: 100px;
+    }
     .plan-section h3 {
         font-size: 30px;
         margin-bottom: 30px;

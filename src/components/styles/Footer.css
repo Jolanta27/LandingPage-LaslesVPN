@@ -126,12 +126,16 @@ footer div.footer-boxes:nth-child(2) p:nth-of-type(2) span {
     }
 }
 @media (min-width: 769px) {
+footer {
+    padding: 0 0 35px 0;
+    }
 .footer-boxes { 
     display: block;
     margin: 30px auto;
 }
 .subscription {
     padding: 30px 0;
+    margin-bottom: 60px;
 }
 .subscription h4 {
     font-size: 35px;
@@ -156,6 +160,7 @@ footer div.footer-boxes:nth-child(2) p:nth-of-type(2) span {
 .footer-content {
     display: flex;
     flex-wrap: wrap;
+    gap: 35px;
 }
 .footer-info {
     width: 100%;

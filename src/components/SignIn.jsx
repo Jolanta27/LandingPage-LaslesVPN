@@ -1,14 +1,14 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import './styles/SignIn.css';
+import { useNavigate} from 'react-router-dom';
 
 
 const SignInForm = () => {
-  
+  const navigate = useNavigate();
     return (
         <div className='container'>
             <div className='form-container'>
-          
-        <Formik
+                 <Formik
             initialValues={{ email: '', password: '' }}
             validate={values => {
                 const errors = {};
@@ -40,7 +40,7 @@ const SignInForm = () => {
                     <h1>
                         Sign In
                     </h1>
-                    <label htmlFor="emal"> 
+                    <label htmlFor="email"> 
                         Email Address
                     </label>
                     <Field 
@@ -62,9 +62,11 @@ const SignInForm = () => {
                     </button>
                     </Form>
                 )}
-            </Formik>
-        </div>
-    </div>
-    );
-    }
+            </Formik> 
+            </div>
+            <button onClick={() => navigate('/')} className='close-btn'>Close</button> 
+            </div>
+            );
+            };  
+
     export default SignInForm;

@@ -1,8 +1,11 @@
 import './styles/SignUp.css';
 import { Formik, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { useNavigate } from 'react-router-dom';
 
 const SignUpForm = () => {
+    const navigate = useNavigate();
+
     const styles = {
         container: {
             display: "flex",
@@ -124,11 +127,13 @@ const SignUpForm = () => {
                         </button>
                           </div>
                      </Form>
-               </div>
+                    </div>
                </div>
             )}
-    </Formik>
-    </div>
+            </Formik>
+            <button onClick={() => navigate('/')} className='close-btn'>Close</button> 
+        </div>
+   
     );
     };  
         const initialValues = {
