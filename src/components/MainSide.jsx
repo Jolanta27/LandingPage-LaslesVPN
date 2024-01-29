@@ -12,7 +12,6 @@ const FirstSide = () => {
 
 return (
     <>
-    <Header />
     <MainSection />
     <DownSection />
     <MiddleSection />
