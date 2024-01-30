@@ -34,6 +34,9 @@ button:hover {
 
 }
 @media (max-width: 768px){
+    .mobile-form-content  {
+        background-color: #f53838;
+    }
     .form-and-button-container {
         display: flex;
         flex-direction: column;
@@ -41,10 +44,9 @@ button:hover {
         position: relative;
     }
     .mobile-form-content {
-        padding: 0px 20px;
-        height: 80%;
-        width: 450px;
-        margin: -100px auto;
+        height: 700px;
+        width: 350px;
+        
     }
     .mobile-form-content .form-content {
         padding: 30px 50px;
@@ -61,7 +63,9 @@ button:hover {
         position: absolute;
         top: 80%;
         left: 75%;
-     
+    }
+    .form-content input::placeholder {
+        margin: 0;
     }
 }
 @media (min-width: 769px){

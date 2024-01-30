@@ -63,7 +63,7 @@ const SubscriptionForm = () => {
                         </div>
                     </div>
     
-                    <div>
+                    <div className='checkbox-terms'>
                         <label>
                             <Field type="checkbox" name="acceptTerms" />
                             I accept the terms and conditions

@@ -52,28 +52,45 @@ input[type="checkbox"] {
 @media (max-width: 768px){
     .subscription-content {
         gap: 15px;
-        max-width: 80%;
+        max-width: 90%;
         height: 80%;
-        margin: 40px auto;
+        margin: 25px auto;
     }
     .envelope-icon {
         padding: 10px;
         font-size: 15px;
         margin-bottom: 10px;
     }
+    .email-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+
+    }
+    .email-form label, .choose-points label, .checkbox-terms label, button {
+        font-size: 12px;
+    }
     .subscription-content h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
     .subscription-content p {
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
     }
     .subscription-content button {
-        padding: 8px 15px;
+        padding: 8px 14px;
         
     }
     .subscription-content button:hover {
-        padding: 11px 21px;
+        padding: 11px 16px;
+    }
+    .checkbox-terms {
+        text-align: center;  
+        background-color: white;
+    }
+    .choose-points {
+        background-color: white;
     }
 }
 @media (min-width: 769px){

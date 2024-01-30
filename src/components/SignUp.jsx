@@ -12,10 +12,10 @@ const SignUpForm = ({ onClose, showForm }) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: "100vh"
+            height: "100vh",
         },
         formContainer: {
-            height: '75%',
+            height: '70%',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -30,9 +30,11 @@ const SignUpForm = ({ onClose, showForm }) => {
             textAlign: 'center',
         },
         input: {
-            width: '80%',
-            padding: '10px',
-            margin: '10px auto',
+            width: '70%',
+            height: '20%',
+            padding: '8px',
+            fontSize: '12px',
+            margin: '8px auto',
             display: 'block',
             border: '1px solid #DDDDDD',
             borderRadius: '10px',
@@ -68,10 +70,10 @@ const SignUpForm = ({ onClose, showForm }) => {
             {(formik) => (
                <div style={styles.container}>
                  <div style={styles.formContainer}>
+                     <Form className='form-content' noValidate>
                      <h1 style={styles.childElement} className='signup-header'>
                         Sign Up
                     </h1>
-                     <Form className='form-content' noValidate>
                           <div style={styles.childElement}>
                             <label style={{...styles.childElement, ...styles.firstNameLabel}} className="data-info" htmlFor="firstName">
                                 First Name
