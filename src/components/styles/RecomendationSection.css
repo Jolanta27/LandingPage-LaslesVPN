@@ -71,7 +71,7 @@
     }
     .customers-boxes {
         flex-direction: column;
-        margin-top: 10px;
+        margin-top: 60px;
     }
     .name-intro p{
         margin-bottom: 10px;

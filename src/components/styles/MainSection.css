@@ -8,9 +8,7 @@
     align-items: center;
 }
 @media (max-width: 768px){
-    * {
-        max-height: 100vh;
-    }
+    
     .main-section, .main-section > div {
         display: flex;
         flex-direction: column;
