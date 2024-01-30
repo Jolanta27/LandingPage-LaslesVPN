@@ -1,4 +1,4 @@
-import Header from './Header';
+
 import MainSection from './MainSection';
 import DownSection from './DownSection';
 import MiddleSection from './MiddleSection';
