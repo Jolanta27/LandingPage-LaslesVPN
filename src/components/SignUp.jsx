@@ -57,7 +57,7 @@ const SignUpForm = ({ onClose, showForm }) => {
     });
 
     return (
-    <div className='mobile-form-content'>
+    <div className='mobile-form-content form-and-button-container'>
     <Formik
         initialValues ={initialValues}
         validationSchema={validate}

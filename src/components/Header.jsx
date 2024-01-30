@@ -44,7 +44,19 @@ const Header = () => {
            return (
                 <nav className="menu-items">
                     <img src="logo.JPG" id="logo" alt="logo" />
-                          <Hamburger toggled={isOpen} size={25} toggle={setOpen}/>
+                          <Hamburger 
+                          toggled={isOpen} 
+                          size={25} 
+                          toggle={() => {
+                            setOpen(true);
+                            setTimeout(() => {
+                                setOpen(false);
+                            }, 2000);
+                          }
+
+                          
+                          
+                          }/>
                           <ul className={isOpen ? "open" : ""}>
                      <MenuItems setShowForm={setShowForm}/>
                      </ul> 
