@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .form-container {
@@ -65,6 +65,9 @@
     background-color: inherit;
 }
 @media (max-width: 768px){
+    .container {
+        justify-content: flex-start;
+    }
     .form-container {
         width: 300px;
         height: 500px;
