@@ -85,7 +85,7 @@ footer div.footer-boxes:nth-child(2) p:nth-of-type(2) span {
     .subscription {
         flex-direction: column;
         width: 80%;
-        margin: 350px auto 20px auto;
+        margin: 50px auto 20px auto;
     }
     .subscription .subscription-text h4 {
         font-size: 18px;

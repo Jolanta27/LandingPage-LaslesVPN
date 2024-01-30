@@ -62,7 +62,8 @@ const SignInForm = () => {
                     </button>
                     </Form>
                 )}
-            </Formik> 
+                 
+            </Formik>
             </div>
             <button onClick={() => navigate('/')} className='close-btn'>Close</button> 
             </div>

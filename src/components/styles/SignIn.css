@@ -81,6 +81,9 @@
     .container {
         flex-direction: column;
     }
+    .close-btn {
+        margin-top: -70px;
+    }
 }
 @media (min-width: 769px){
     .form-container {
