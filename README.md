@@ -28,4 +28,4 @@
 This project is deployed with[Netlify](https://www.netlify.com/). You can view the live demo [here](https://laslesvpnoslo.netlify.app/).
 
 <h3>The project looks like: </h3>
-![image](https://github.com/Jolanta27/LandingPage-LaslesVPN/assets/53143114/f7f565f9-9c84-4776-b742-8a985fdc0e68)
+(https://github.com/Jolanta27/LandingPage-LaslesVPN/assets/53143114/f7f565f9-9c84-4776-b742-8a985fdc0e68)
